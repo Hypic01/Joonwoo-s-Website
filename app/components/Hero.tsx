@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <main className="relative p-10 min-h-screen">
       {/* Background Image */}
-      <Image 
+      <Image
         src="/bg-picture.png"
         alt="background picture"
         width={1728}
@@ -23,26 +23,48 @@ export default function Hero() {
           Website
         </h1>
       </div>
-      
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
-        <Image 
+
+      <a href="#feature" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+        <Image
           src="/Arrow down.png"
           alt="Arrow down"
           width={50}
           height={50}
-          className="cursor-pointer"
+          className="cursor-pointer animate-bounce animate-duration-1000 animate-ease-in-out"
         />
-      </div>
+      </a>
 
       {/* SNS Icons at the bottom right corner, respecting padding */}
       <div className="absolute bottom-10 right-10 flex gap-7 z-20">
-        <GlassCircle src="/instagram-icon.png" alt="Instagram Icon" />
-        <GlassCircle src="/youtube-icon.png" alt="Youtube Icon" />
-        <GlassCircle src="/linkedin-icon.png" alt="LinkedIn Icon" />
-        <GlassCircle src="/instagram-icon.png" alt="Instagram Icon" />
+        <a
+          target="_blank"
+          href="https://www.instagram.com/joonupark/"
+          rel="noopener noreferrer"
+        >
+          <GlassCircle src="/instagram-icon.png" alt="Instagram Icon" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@%EC%A3%BC%EB%88%84%EB%B0%95"
+          rel="noopener noreferrer"
+        >
+          <GlassCircle src="/youtube-icon.png" alt="Youtube Icon" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/hypic01/"
+          rel="noopener noreferrer"
+        >
+          <GlassCircle src="/linkedin-icon.png" alt="LinkedIn Icon" />
+        </a>
+        <a
+          target="_blank"
+          href="https://twitter.com/"
+          rel="noopener noreferrer"
+        >
+          <GlassCircle src="/instagram-icon.png" alt="Instagram Icon" />
+        </a>
       </div>
-
-      
     </main>
   );
 }
