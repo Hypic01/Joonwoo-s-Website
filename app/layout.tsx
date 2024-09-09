@@ -4,7 +4,7 @@ import "./globals.css";
 
 const outfit = Outfit({
   subsets: ['latin'], // you can specify additional subsets if needed
-  weights: ['400', '500', '600', '700'], // specify the font weights you plan to use
+  weight: ['400', '500', '600', '700'], // specify the font weights you plan to use
 });
 
 export const metadata: Metadata = {
