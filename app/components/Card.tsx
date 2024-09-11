@@ -12,7 +12,7 @@ type CardProps = {
 
 const Card = ({ link, text, style, img, tint }: CardProps) => {
   return (
-    <Link href={link} className={`rounded-3xl ${style} p-10 relative `}>
+    <Link href={link} className={`rounded-3xl ${style} min-h-24 w-full flex p-8 md:p-10 relative `}>
         
             <Image 
                 src={img}
@@ -24,7 +24,7 @@ const Card = ({ link, text, style, img, tint }: CardProps) => {
                   }}
             />
             <div className={`${tint} absolute inset-0 bg-opacity-50 rounded-3xl`} />
-            <h3 className="absolute bottom-8 left-8 font-semibold text-white">
+            <h3 className="self-center absolute md:bottom-8 md:left-8 font-semibold text-white">
                 {text}
             </h3>
         

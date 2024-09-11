@@ -4,7 +4,7 @@ import Card from './Card'
 const Feature = () => {
   return (
     <main id="feature" className="p-10 min-h-screen relative flex flex-col bg-white">
-        <div className="flex-grow w-full h-full grid grid-cols-12 grid-rows-12 gap-6"> 
+        <div className="flex-grow w-full h-full flex flex-col md:grid md:grid-cols-12 md:grid-rows-12 gap-6"> 
             <Card link="/about" text="About Myself" style="col-span-8 row-span-6 text-3xl" img="/about_myself-bg.jpeg" tint="bg-[#55E184]" />
             <Card link="/about" text="Musics I love" style="col-span-4 row-span-6  text-3xl" img="/musics-bg.jpg" tint="bg-[#086CE5]"/>
             <Card link="/about" text="My Dev Page" style="col-span-4 row-span-6  text-3xl" img="/dev-bg.jpeg" tint="bg-[#0004FF]"/>

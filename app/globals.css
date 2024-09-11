@@ -31,3 +31,51 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* General typewriter effect settings */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .05em;
+  border-right: .15em solid orange; /* Orange cursor */
+}
+
+/* Typing effect keyframes */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking cursor animation during typing */
+@keyframes blink-caret {
+  from, to { border-right-color: transparent; }
+  50% { border-right-color: orange; }
+}
+
+/* Hide cursor after typing is complete */
+@keyframes hide-caret {
+  to { border-right-color: transparent; }
+}
+
+/* For individual lines */
+.line-1 {
+  width: 0;
+  animation: typing 2s steps(10, end) forwards, blink-caret 0.5s step-end infinite 0s 2.5s, hide-caret 0s 2.5s forwards;
+  max-width: 10ch;
+  animation-fill-mode: forwards;
+}
+
+.line-2 {
+  width: 0;
+  animation: typing 2s steps(14, end) forwards, blink-caret 0.5s step-end infinite 2.5s 5s, hide-caret 0s 5s forwards;
+  max-width: 14ch;
+  animation-fill-mode: forwards;
+}
+
+.line-3 {
+  width: 0;
+  animation: typing 2s steps(7, end) forwards, blink-caret 0.5s step-end infinite 5s 7.5s, hide-caret 0s 7.5s forwards;
+  max-width: 7ch;
+  animation-fill-mode: forwards;
+}

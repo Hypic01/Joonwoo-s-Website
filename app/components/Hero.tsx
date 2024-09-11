@@ -8,14 +8,13 @@ export default function Hero() {
       <Image
         src="/bg-picture.png"
         alt="background picture"
-        width={1728}
-        height={1128}
+        fill={true}
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
 
       {/* Absolute container for h1 to keep it vertically centered and left-aligned, ignoring padding */}
-      <div className="absolute inset-y-0 left-0 flex items-center">
-        <h1 className="font-semibold text-white text-9xl leading-[13rem]">
+      <div className="absolute inset-y-0 left-0 w-full flex items-center">
+        <h1 className="font-semibold text-white text-7xl leading-[7rem] md:text-8xl md:leading-[8rem] lg:text-9xl lg:leading-[9rem] xl:text-9xl xl:leading-[13rem]">
           Welcome to
           <br />
           <span className="text-[#487CFF]">Joonwoo Park</span>’s
@@ -24,7 +23,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <a href="#feature" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+      <a href="#feature" className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
         <Image
           src="/Arrow down.png"
           alt="Arrow down"
@@ -35,7 +34,7 @@ export default function Hero() {
       </a>
 
       {/* SNS Icons at the bottom right corner, respecting padding */}
-      <div className="absolute bottom-10 right-10 flex gap-7 z-20">
+      <div className="absolute bottom-10 right-0 w-full flex justify-around md:justify-end md:right-10 md:gap-7 z-20">
         <a
           target="_blank"
           href="https://www.instagram.com/joonupark/"
